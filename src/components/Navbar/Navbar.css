@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #3817f3;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-header {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-btn {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 1.4rem;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-back-home {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px 0 0 0;
+  border: 2px solid green;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #99fa99;
+  transition: 0.2s ease;
+}
+
+.btn-back-home:hover {
+  background-color: green;
+  color: #fff;
+  border-color: #fff;
+}

@@ -1,0 +1,16 @@
+.error {
+  margin: 10px 0;
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 20px 15px;
+  background-color: #ffb0b0;
+  text-align: center;
+}
+
+.error-title {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
