@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { create, home } from "./../../endpoints/endpoints";
+import { create, home } from "../../utilities/endpoints";
 
 interface NavbarProps {}
 

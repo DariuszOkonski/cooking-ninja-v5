@@ -6,7 +6,7 @@ import Home from "./pages/home/Home";
 import Search from "./pages/search/Search";
 import Show from "./pages/show/Show";
 import Error from "./components/Error/Error";
-import { create, home, search, show, error } from "./endpoints/endpoints";
+import { create, home, search, show, error } from "./utilities/endpoints";
 
 function App() {
   return (
