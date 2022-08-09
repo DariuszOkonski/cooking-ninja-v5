@@ -8,20 +8,34 @@
 }
 
 .navbar-header {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #fff;
+}
+
+@media (min-width: 600px) {
+  .navbar-header {
+    font-size: 2.4rem;
+  }
 }
 
 .navbar-btn {
   border: none;
   color: #fff;
   background-color: transparent;
-  border: 2px solid #fff;
-  font-size: 1.4rem;
-  padding: 10px 15px;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .navbar-btn {
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    border-width: 2px;
+  }
 }
 
 .btn-back-home {

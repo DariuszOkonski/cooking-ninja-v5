@@ -11,8 +11,6 @@ interface HomeProps {}
 const Home: React.FC<HomeProps> = () => {
   const [data, error, isPending] = useFetchGet(getRecipes);
 
-  console.log({ data, error, isPending });
-
   return (
     <div className="home">
       {isPending && <Loading />}
