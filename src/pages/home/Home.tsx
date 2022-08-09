@@ -15,7 +15,6 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <div className="home">
-      <h2>Home</h2>
       {isPending && <Loading />}
       {error && <Error error={error!} />}
       {data && <RecipesList recipes={data} />}

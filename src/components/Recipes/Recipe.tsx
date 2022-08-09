@@ -7,9 +7,13 @@ interface RecipeProps {
 }
 
 const Recipe: React.FC<RecipeProps> = (props) => {
+  const { id, title, ingredients, method, cookingTime } = props.recipe;
   return (
     <div className="recipe">
-      <h2>{props.recipe.id}</h2>
+      <h2 className="recipe-header">{title}</h2>
+      <p className="recipe-cooking-time">{cookingTime}</p>
+      <p className="recipe-method">{method.substring(0, 100)}...</p>
+      <button className="recipe-button">Cook this</button>
     </div>
   );
 };

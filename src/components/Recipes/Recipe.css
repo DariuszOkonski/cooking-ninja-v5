@@ -1,0 +1,32 @@
+.recipe {
+  background-color: #fff;
+  margin: 20px;
+  min-width: 300px;
+  padding: 20px;
+  color: #333;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-header {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.recipe-cooking-time {
+  margin: 10px 0;
+  color: #a3a2a2;
+}
+
+.recipe-method {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.recipe-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

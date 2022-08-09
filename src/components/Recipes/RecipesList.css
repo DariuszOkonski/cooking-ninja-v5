@@ -1,0 +1,16 @@
+.recipes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 775px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1095px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
