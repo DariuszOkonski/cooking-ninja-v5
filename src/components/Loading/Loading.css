@@ -1,0 +1,16 @@
+.loading {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.loading img {
+  width: 100px;
+}
+
+.loading-header {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 10px;
+}

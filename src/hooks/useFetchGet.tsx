@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { IRecipe } from "./../utilities/interfaces";
 
-const useFetchGet = (url: string): [IRecipe[], string | null, boolean] => {
-  const [date, setDate] = useState<IRecipe[]>([]);
+const useFetchGet = (
+  url: string
+): [IRecipe[] | null, string | null, boolean] => {
+  const [data, setData] = useState<IRecipe[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isPending, setIsPending] = useState<boolean>(false);
 
   useEffect(() => {
     setIsPending(true);
     setError(null);
-    setDate([]);
+    setData(null);
 
     const fetchData = async () => {
       try {
@@ -20,15 +22,15 @@ const useFetchGet = (url: string): [IRecipe[], string | null, boolean] => {
           );
         }
 
-        const data = await response.json();
+        const recipes = await response.json();
         setIsPending(false);
         setError(null);
-        setDate(data);
+        setData(recipes);
       } catch (error) {
         if (error instanceof Error) {
           setError(error.message);
           setIsPending(false);
-          setDate([]);
+          setData(null);
         }
       }
     };
@@ -36,7 +38,7 @@ const useFetchGet = (url: string): [IRecipe[], string | null, boolean] => {
     fetchData();
   }, [url]);
 
-  return [date, error, isPending];
+  return [data, error, isPending];
 };
 
 export default useFetchGet;
